@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Curious Creations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+
+      .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+      }
+
+      <!-- This edits the jumbotron -->
+
+      .jumbotron {
+        margin-bottom: 0;
+      }
+
+      a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: darkgrey;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: grey;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <br>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="email">Name:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-info">Login</button>
+      <button type="submit" class="btn">Sign Up</button>
+
+
+      <div class="dropdown pull-right">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Account
+          <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Saves</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <br>
+      <br>
+
+      <div class="jumbotron">
+        <div class="container text-center">
+          <h1>Curious Creations</h1>
+          <p>Crochet, Cross Stitch and Carvings </p>
+        </div>
+      </div>
+
+      <!-- This is the section for the navigation bar. There needs to be a background color, links and search bar struggling with getting the search bar in the middle -->
+
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="archive.html">Archive</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="faq.html">FAQ</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row row-no-gutters">
+        <div class="col-sm-6">
+          <div class="panel-group">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse1">Account Information</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="list-group">
+                <a href="#" class="list-group-item">Sign up?</a>
+                <a href="#" class="list-group-item">Settings?</a>
+                <a href="#" class="list-group-item">Deactivation?</a>
+                </div></div>
+              <div class="panel-footer"><a href="seemore.html">See more...</a></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="panel-group">
+            <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse2">Shipping</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="list-group">
+                <a href="#" class="list-group-item">Delays?</a>
+                <a href="#" class="list-group-item">Cost?</a>
+                <a href="#" class="list-group-item">Locations?</a>
+                </div>
+              </div>
+              <div class="panel-footer"><a href="seemore.html">See more...</a></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-no-gutters">
+        <div class="col-sm-6">
+          <div class="panel-group">
+            <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse3">Orders</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="list-group">
+                <a href="#" class="list-group-item">Returns?</a>
+                <a href="#" class="list-group-item">Issues?</a>
+                <a href="#" class="list-group-item">Reviews?</a>
+                </div>
+              </div>
+              <div class="panel-footer"><a href="seemore.html">See more...</a></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+      <div class="row row-no-gutters">
+        <div class="col-sm-6">
+          <div class="panel-group">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse4">Payments</a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item">Refunds?</a>
+                    <a href="#" class="list-group-item">Billing?</a>
+                    <a href="#" class="list-group-item">Gift Certificates?</a>
+                  </div></div>
+                <div class="panel-footer"><a href="seemore.html">See more...</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="panel-group">
+            <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse5">Products</a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">In Stock?</a>
+                  <a href="#" class="list-group-item">Custom Orders?</a>
+                  <a href="#" class="list-group-item">Discontinued?</a>
+                </div></div>
+              <div class="panel-footer"><a href="seemore.html">See more...</a></div>
+            </div>
+          </div>
+          </div></div>
+
+        <div class="col-sm-6">
+          <div class="panel-group">
+            <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse6">General</a>
+              </h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">Messages?</a>
+                  <a href="#" class="list-group-item">Saves?</a>
+                  <a href="#" class="list-group-item">Technical support?</a>
+                </div></div>
+              <div class="panel-footer"><a href="seemore.html">See more...</a></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      </body>
+    </html>

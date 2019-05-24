@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Curious Creations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+
+      .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+      }
+
+      <!-- This edits the jumbotron -->
+
+      .jumbotron {
+        margin-bottom: 0;
+      }
+
+      a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: darkgrey;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: grey;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <br>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="email">Name:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-info">Login</button>
+      <button type="submit" class="btn">Sign Up</button>
+
+
+      <div class="dropdown pull-right">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Account
+          <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Saves</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <br>
+      <br>
+
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Curious Creations</h1>
+        <p>Crochet, Cross Stitch and Carvings </p>
+      </div>
+    </div>
+
+      <!-- This is the section for the navigation bar. There needs to be a background color, links and search bar struggling with getting the search bar in the middle -->
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="home.html">Home</a></li>
+            <li class="active"><a href="archive.html">Archive</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading"> <a href="url"> WINNER!!! </a>
+              </div>
+            <div class="panel-body"><img src="placeholder.png" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer"> Monthly prize winner announced!</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading"><a href="url"> BLACK FRIDAY DEALS</a></div>
+            <div class="panel-body"><img src="placeholder.png" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">Buy two hats get a pair of gloves free!</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading"><a href="url"> SUNDAY SALE </a>
+              </div>
+
+            <div class="panel-body"><img src="placeholder.png" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer"> All carvings 35% off!  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+      <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading"><a href="url"> NEW Products Released </a>
+            </div>
+            <div class="panel-body"><img src="placeholder.png" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">New Curiosities to be featured in the web store within the next month</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading"><a href="url"> Gift Giveaway </a></div>
+            <div class="panel-body"><img src="placeholder.png" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer"> Like or Follow Curious Creations on social media to be entered to win </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading"><a href="url"> Shipping Delays </a></div>
+            <div class="panel-body"><img src="placeholder.png" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer"> Weather concerns have pushed back shipping times... </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <br>
+      <br>
+  </body>
+</html>

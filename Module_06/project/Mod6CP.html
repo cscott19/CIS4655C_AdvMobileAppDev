@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mod 5 Course Project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+
+.img {
+  float:left;
+  max-width: 100%;
+  height: auto;
+
+}
+.img2 {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+</style>
+
+    <div class="container-fluid">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="img-responsive" src="logo.jpg" alt="logo">
+        </div>
+        <div class="col-sm-9">
+          <img class="img-responsive img-fluid" src="banner.jpg" alt="banner">
+        </div>
+      </div>
+    </div>
+</div>
+
+    <br>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"> Home <span class="badge">1</span></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#"> About Us </a></li>
+          <li><a href="#"> Portfolio <span class="label label-default">New</span></a></li>
+          <li><a href="#"> Purchases <span class="badge">5</span></a></li>
+          <li><a href="#"> Messages <span class="badge">3</span></a></li>
+          <li><a href="#"> Profile </a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+    if( 'Notification' in window){
+
+      if (Notification.permission === 'granted') {
+
+      }else{
+          Notification.requestPermission()
+              .then(function(result) {
+                  console.log(result);
+                  if( Notification.permission == 'granted'){
+                  }
+              })
+              .catch( (err) => {
+                  console.log(err);
+              });
+      }
+
+  }
+
+</script>
+</body>
+</html>
